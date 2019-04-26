@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/container_fragement"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/fragement_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change"
+            />
+        <Button
+            android:id="@+id/fragement_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/removee"
+            android:layout_toRightOf="@+id/fragement_change"
+          />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragment"
+            android:name="com.e.fragementlcyle.MyFragement"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            />
+
+        <!--<fragment-->
+            <!--android:id="@+id/fragment2"-->
+            <!--android:name="com.e.fragementlcyle.SecondFragement"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp"-->
+
+            <!--/>-->
+        <!--<fragment-->
+            <!--android:id="@+id/fragment3"-->
+            <!--android:name="com.e.fragementlcyle.ThirdFragement"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp"-->
+
+            <!--/>-->
+    </LinearLayout>
+
+
+
+</LinearLayout>
